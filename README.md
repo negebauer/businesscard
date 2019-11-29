@@ -7,3 +7,7 @@ It's me, Nicolás Gebauer!
 ```sh
 npx negebauer
 ```
+
+***
+
+Based off [mxstbr](https://github.com/mxstbr)'s [card](https://github.com/mxstbr/businesscard)
