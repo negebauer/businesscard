@@ -21,12 +21,14 @@ const data = {
   github: chalk.cyan('https://github.com/negebauer'),
   linkedin: chalk.cyan('https://linkedin.com/in/negebauer'),
   web: chalk.cyan('https://negebauer.com'),
+  npm: chalk.cyan('https://npmjs.com/negebauer'),
   npx: chalk.white('npx negebauer'),
   labelWork: chalk.white.bold('      Work:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
   labelGitHub: chalk.white.bold('    GitHub:'),
   labelLinkedIn: chalk.white.bold('  LinkedIn:'),
   labelWeb: chalk.white.bold('       Web:'),
+  labelNpm: chalk.white.bold('       Npm:'),
   labelCard: chalk.white.bold('      Card:'),
 }
 
@@ -38,6 +40,7 @@ const twittering = `${data.labelTwitter}  ${data.twitter}`
 const githubing = `${data.labelGitHub}  ${data.github}`
 const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
 const webing = `${data.labelWeb}  ${data.web}`
+const npming = `${data.labelNpm}  ${data.npm}`
 const carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
@@ -54,6 +57,8 @@ const output =
   linkedining +
   newline +
   webing +
+  newline +
+  npming +
   newline +
   newline +
   carding
