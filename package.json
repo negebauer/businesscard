@@ -1,19 +1,24 @@
 {
   "name": "negebauer",
-  "version": "1.6.0",
+  "version": "1.0.0",
   "description": "A personal card for Nicolas Gebauer (@negebauer)",
+  "repository": "git@github.com:negebauer/businesscard.git",
   "main": "/bin/card.js",
+  "homepage": "https://negebauer.com",
+  "license": "MIT",
+  "author": {
+    "name": "Nicolas Gebauer",
+    "email": "hello@negebauer.com",
+    "url": "https://negebauer.com"
+  },
   "bin": {
     "negebauer": "./bin/card.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/negebauer/businesscard.git"
-  },
-  "homepage": "https://bnb.im",
-  "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+  "files": [
+    "bin/card.js"
+  ],
+  "bugs": {
+    "url": "https://github.com/negebauer/businesscard/issues"
   },
   "keywords": [
     "card",
@@ -23,17 +28,11 @@
     "npx card",
     "business card"
   ],
-  "author": {
-    "name": "Nicolas Gebauer",
-    "email": "hello@negebauer.com",
-    "url": "https://negebauer.com"
-  },
-  "license": "MIT",
-  "files": [
-    "bin/card.js"
-  ],
-  "bugs": {
-    "url": "https://github.com/negebauer/businesscard/issues"
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "release": "standard-version",
+    "postrelease": "git push --follow-tags && npm publish --access public"
   },
   "dependencies": {
     "boxen": "^4.1.0",
@@ -48,6 +47,7 @@
     "eslint-plugin-jest": "^23.0.5",
     "eslint-plugin-prettier": "^3.1.1",
     "prettier": "^1.19.1",
-    "rosie": "^2.0.1"
+    "rosie": "^2.0.1",
+    "standard-version": "^7.0.1"
   }
 }
