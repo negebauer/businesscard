@@ -10,4 +10,4 @@ npx negebauer
 
 ***
 
-Based off [mxstbr](https://github.com/mxstbr)'s [card](https://github.com/mxstbr/businesscard)
+Based off [mxstbr](https://github.com/mxstbr)'s [card](https://github.com/mxstbr/businesscard) which is a fork of [bnb](https://github.com/bnb)'s [card](https://github.com/bnb/bitandbang) 
