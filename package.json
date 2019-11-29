@@ -23,7 +23,11 @@
     "npx card",
     "business card"
   ],
-  "author": "Nicolas Gebauer <hello@negebauer.com> (https://negebauer.com)",
+  "author": {
+    "name": "Nicolas Gebauer",
+    "email": "hello@negebauer.com",
+    "url": "https://negebauer.com"
+  },
   "license": "MIT",
   "files": [
     "bin/card.js"
