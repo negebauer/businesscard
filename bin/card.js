@@ -14,54 +14,48 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('Nicolas Gebauer /'),
-  handle: chalk.cyan('negebauer'),
-  work: chalk.white('Software Engineer at Metabolic'),
-  twitter: chalk.cyan('https://twitter.com/negebauer'),
-  github: chalk.cyan('https://github.com/negebauer'),
-  linkedin: chalk.cyan('https://linkedin.com/in/negebauer'),
-  npm: chalk.cyan('https://npmjs.com/~negebauer'),
-  web: chalk.cyan('https://negebauer.com'),
-  npx: chalk.white('npx negebauer'),
-  labelWork: chalk.white.bold('      Work:'),
-  labelTwitter: chalk.white.bold('   Twitter:'),
-  labelGitHub: chalk.white.bold('    GitHub:'),
-  labelLinkedIn: chalk.white.bold('  LinkedIn:'),
-  labelNpm: chalk.white.bold('       Npm:'),
-  labelWeb: chalk.white.bold('       Web:'),
-  labelCard: chalk.white.bold('      Card:'),
+  nameData: chalk.cyan('negebauer'),
+  workData: chalk.white('Software Engineer at Metabolic'),
+  webData: chalk.cyanBright('https://negebauer.com'),
+  cvData: chalk.white('https://negebauer.com/') + chalk.red('cv.pdf'),
+  githubData: chalk.white('https://github.com/') + chalk.green('negebauer'),
+  twitterData: chalk.white('https://twitter.com/') + chalk.yellow('negebauer'),
+  linkedinData:
+    chalk.white('https://linkedin.com/in/') + chalk.blue('negebauer'),
+  npmData: chalk.white('https://npmjs.com/') + chalk.magenta('~negebauer'),
+  cardData: chalk.greenBright('npx negebauer'),
+
+  nameLabel: chalk.white('        Nicolas Gebauer ') + chalk.green('/'),
+
+  workLabel: chalk.white.bold('      Work:'),
+  webLabel: chalk.white.bold('       Web:'),
+  cvLabel: chalk.white.bold('        cv:'),
+  githubLabel: chalk.white.bold('    GitHub:'),
+  twitterLabel: chalk.white.bold('   Twitter:'),
+  linkedinLabel: chalk.white.bold('  Linkedin:'),
+  npmLabel: chalk.white.bold('       npm:'),
+  cardLabel: chalk.white.bold('      Card:'),
 }
 
-// Actual strings we're going to output
-const newline = '\n'
-const heading = `${data.name} ${data.handle}`
-const working = `${data.labelWork}  ${data.work}`
-const twittering = `${data.labelTwitter}  ${data.twitter}`
-const githubing = `${data.labelGitHub}  ${data.github}`
-const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
-const npming = `${data.labelNpm}  ${data.npm}`
-const webing = `${data.labelWeb}  ${data.web}`
-const carding = `${data.labelCard}  ${data.npx}`
+function build(dataKey) {
+  return `${data[`${dataKey}Label`]} ${data[`${dataKey}Data`]}`
+}
 
 // Put all our output together into a single variable so we can use boxen effectively
-const output =
-  heading +
-  newline +
-  newline +
-  working +
-  newline +
-  twittering +
-  newline +
-  githubing +
-  newline +
-  linkedining +
-  newline +
-  npming +
-  newline +
-  webing +
-  newline +
-  newline +
-  carding
+const output = [
+  build('name'),
+  '',
+  build('work'),
+  '',
+  build('web'),
+  build('cv'),
+  build('github'),
+  build('twitter'),
+  build('linkedin'),
+  build('npm'),
+  '',
+  `${build('card')}`,
+].join('\n')
 
 // eslint-disable-next-line no-console
 console.log(chalk.green(boxen(output, options)))
