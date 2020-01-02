@@ -18,6 +18,22 @@
     esutils "^2.0.2"
     js-tokens "^4.0.0"
 
+"@negebauer/eslint-config-base@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@negebauer/eslint-config-base/-/eslint-config-base-1.1.0.tgz#1ab8c65ea39e5da420283fae9b9e27fc83970a2f"
+  integrity sha512-8JeLeJqu9H2Voe8806CbrxSAzewbRARfelNzSQawTFkQUxPpn59FIzb8Nq4fGEFTRMcboUuon7rjmVwLtv+tZg==
+  dependencies:
+    "@negebauer/eslint-config-shared" "^1.1.0"
+    eslint-config-airbnb-base "^14.0.0"
+
+"@negebauer/eslint-config-shared@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@negebauer/eslint-config-shared/-/eslint-config-shared-1.1.0.tgz#6995e8caed4bc81de27c3cff745e95ac8c3af09e"
+  integrity sha512-vmnwcDguR8gSnn32E8oudYDQZDupz8BsaDWl5Oqlblj1uYlr6bHPHIKPNJvl0UE02lc3X/y5TOXVqOtmy+Snqg==
+  dependencies:
+    eslint-config-prettier "^6.9.0"
+    prettier "^1.19.1"
+
 "@negebauer/prettier-config@^1.0.2":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@negebauer/prettier-config/-/prettier-config-1.0.3.tgz#3089f57a8d6cb101994a24129b0cf37d2db41729"
@@ -826,6 +842,13 @@ eslint-config-prettier@^6.7.0:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.7.0.tgz#9a876952e12df2b284adbd3440994bf1f39dfbb9"
   integrity sha512-FamQVKM3jjUVwhG4hEMnbtsq7xOIDm+SY5iBPfR8gKsJoAB2IQnNF+bk1+8Fy44Nq7PPJaLvkRxILYdJWoguKQ==
+  dependencies:
+    get-stdin "^6.0.0"
+
+eslint-config-prettier@^6.9.0:
+  version "6.9.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.9.0.tgz#430d24822e82f7deb1e22a435bfa3999fae4ad64"
+  integrity sha512-k4E14HBtcLv0uqThaI6I/n1LEqROp8XaPu6SO9Z32u5NlGRC07Enu1Bh2KEFw4FNHbekH8yzbIU9kUGxbiGmCA==
   dependencies:
     get-stdin "^6.0.0"
 
