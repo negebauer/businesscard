@@ -33,7 +33,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "release": "standard-version",
-    "postrelease": "git push --follow-tags && npm publish --access public"
+    "postrelease": "git push --follow-tags && yarn publish --non-interactive --access public"
   },
   "dependencies": {
     "boxen": "^4.1.0",
