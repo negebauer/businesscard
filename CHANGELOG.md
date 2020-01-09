@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.1](https://github.com/negebauer/businesscard/compare/v1.3.0...v1.3.1) (2020-01-09)
+
+
+### Bug Fixes
+
+* cv link ([b3fd3e8](https://github.com/negebauer/businesscard/commit/b3fd3e8db5e4bc73438c6a9695fad6d9475f0b23))
+
 ## [1.3.0](https://github.com/negebauer/businesscard/compare/v1.2.2...v1.3.0) (2019-12-19)
 
 
