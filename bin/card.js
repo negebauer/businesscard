@@ -17,7 +17,7 @@ const data = {
   nameData: chalk.cyan('negebauer'),
   workData: chalk.white('Software Engineer at Metabolic'),
   webData: chalk.cyanBright('https://negebauer.com'),
-  cvData: chalk.white('https://negebauer.com/') + chalk.red('cv.pdf'),
+  cvData: chalk.white('https://negebauer.com/cv/') + chalk.red('cv.pdf'),
   githubData: chalk.white('https://github.com/') + chalk.green('negebauer'),
   twitterData: chalk.white('https://twitter.com/') + chalk.yellow('negebauer'),
   linkedinData:
